@@ -1,0 +1,17 @@
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+op = input("Please enter the operation sign (+, -, *, /): ")
+
+if op == '+':
+    print("The addition is " , num1 + num2)
+elif op == '-':
+    print("The subtraction is " , num1 - num2)
+elif op == '*':
+    print("The multiplication is " , num1 * num2)
+elif op == '/':
+    if num2 != 0:  # division by zero = undefined
+        print("The division is " , num1 / num2)
+    else:
+        print("Input error: You cannot divide by 0 (Try a different number)")
+else:
+    print("Invalid operation sign.")
